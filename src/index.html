@@ -17,15 +17,14 @@
   </head>
 
   <body>
-    <h1>HTML Form</h1>
-
     <form method="post">
       <fieldset class="fieldset">
         <legend>Personal information</legend>
         
-        <label class="form-fild form-fild__text">
+        <label class="form-fild">
           Surname:
           <input
+            class="form-fild__text"
             type="text"
             autocomplete="off"
             name="surname"
@@ -33,9 +32,10 @@
           >
         </label>  
         
-        <label class="form-fild form-fild__text">
+        <label class="form-fild">
           Name:
-          <input 
+          <input
+            class="form-fild__text"
             type="text"
             autocomplete="off"
             name="name"
@@ -43,9 +43,10 @@
           >
         </label>  
         
-        <label class="form-fild form-fild__number">
+        <label class="form-fild">
           How old are You?
-          <input
+          <input 
+            class="form-fild__number"
             type="number"
             name="age"
             min="1"
@@ -54,14 +55,19 @@
           >
         </label>
         
-        <label class="form-fild form-fild__date">
+        <label class="form-fild">
           Full date of birth:
-          <input type="date" name="birthday">
+          <input
+            class="form-fild__date"
+            type="date"
+            name="birthday"
+          >
         </label>
         
-        <label class="form-fild form-fild__checkbox">
+        <label class="form-fild">
           I accept the term of the agreement
           <input
+            class="form-fild__checbox"
             type="checkbox"
             name="agreement"
             required
@@ -73,19 +79,22 @@
       <fieldset class="fieldset">
         <legend>Registration</legend>
         
-        <label class="form-fild form-fild__text">
+        <label class="form-fild">
           E-mail:
           <input
-            type="text"
+            class="form-fild__email"
+            type="email"
             autocomplete="off"
             name="email"
             placeholder="email@example.com"
+            required
           >
         </label>  
         
-        <label class="form-fild form-fild__text">
+        <label class="form-fild">
           Password:
           <input
+            class="form-fild__text"
             type="password"
             autocomplete="off"
             name="password"
@@ -97,15 +106,17 @@
       <fieldset class="fieldset">
         <legend>An interesting fact about you!</legend>
         
-        <label class="form-fild form-fild__radio">
+        <label class="form-fild">
           Do you love cats?
           <input
+            class="form-fild__radio"
             type="radio"
             name="cat"
             value="Yes"
           >
           Yes
           <input
+            class="form-fild__radio"
             type="radio"
             name="cat"
             value="No"
@@ -113,21 +124,26 @@
           No
         </label>  
         
-        <label class="form-fild form-fild__color">
+        <label class="form-fild">
           What is your favorite color?
-          <input type="color" name="color">
+          <input
+            class="form-fild__color"
+            type="color" 
+            name="color"
+          >
         </label>  
         
-        <label class="form-fild form-fild__time">
+        <label class="form-fild">
           What time do you go to bed?
           <input
+            class="form-fild__time"
             type="time"
             name="time"
             step="3"
           >
         </label>
         
-        <label class="form-fild form-fild__select">
+        <label class="form-fild">
           What are you favorite brand of car?
           <select
             class="form-fild__select"
@@ -140,9 +156,10 @@
           </select>
         </label>
         
-        <label class="form-fild form-fild__range">
+        <label class="form-fild">
           How do you rate our work?
           <input
+            class="form-fild__range"
             type="range"
             name="rate"
             value="0"
@@ -154,18 +171,20 @@
       <fieldset class="fieldset">
         <legend>Additional info:</legend>
         
-        <label class="form-fild form-fild__textarea">
+        <label class="form-fild">
           Comments:
           <textarea
+            class="form-fild__textarea"
             name="comments"
             cols="20"
             rows="2"
-          ></textarea>
+          >
+          </textarea>
         </label>  
         
-        <label class="form-fild form-fild__select">
+        <label class="form-fild">
           Would you recommend us?
-          <select name="recommend">
+          <select name="recommend" class="form-fild__select">
             <option value="yes">yes</option>
             <option value="no">no</option>
           </select>
@@ -173,7 +192,10 @@
 
       </fieldset>
 
-      <button type="submit" name="button">
+      <button 
+        class="button"
+        type="submit"
+        name="button">
         Submit
       </button>
     </form>
