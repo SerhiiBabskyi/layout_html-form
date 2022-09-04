@@ -79,6 +79,7 @@
             type="text"
             autocomplete="off"
             name="email"
+            placeholder="email@example.com"
           >
         </label>  
         
@@ -119,13 +120,20 @@
         
         <label class="form-fild form-fild__time">
           What time do you go to bed?
-          <input type="time" name="time">
+          <input
+            type="time"
+            name="time"
+            step="3"
+          >
         </label>
         
         <label class="form-fild form-fild__select">
           What are you favorite brand of car?
-          <select name="car" size="4">
-            <option></option>
+          <select
+            class="form-fild__select"
+            name="car"
+            size="4"
+          >
             <option value = "audi">Audi</option>
             <option value = "bmw">BMW</option>
             <option value = "cia">CIA</option>
@@ -134,7 +142,11 @@
         
         <label class="form-fild form-fild__range">
           How do you rate our work?
-          <input type="range" name="rate">
+          <input
+            type="range"
+            name="rate"
+            value="0"
+          >
         </label>
 
       </fieldset>
